@@ -5,7 +5,7 @@ This project uses **Apache Spark Structured Streaming** to process and analyze *
 The streaming data is continuously processed, stored into **PostgreSQL**, and visualized dynamically using **Power BI**.
 
 **Objectives:**
-1. Read real-time data from JSON files in the `data/` directory.  
+1. Read real-time data from JSON files in the `data/` directory using **Apache Kafka** 
 2. Process and clean the data using **Apache Spark**.  
 3. Generate two analytical datasets:  
    - `op_per_year`: yearly statistics of anime.  
@@ -48,7 +48,7 @@ Week4/
 ## ⚙️ 1️⃣ Real-Time Data Streaming
 
 ### 📘 Description
-- The project reads real-time anime data from **JSON files** (simulating live stream).  
+- The project reads real-time anime data from **JSON files** using **Apache Kafka** (simulating live stream).  
 - Each record includes details such as anime name, episode count, year, and rating.  
 - Data is streamed to **Spark Structured Streaming** for continuous processing.
 
