@@ -15,8 +15,11 @@ scrape_configs:
           app: "prometheus"
 
   - job_name: "nifi"
+    metrics_path: /metrics
+    scheme: http 
+    fallback_scrape_protocol: PrometheusText0.0.4
     static_configs:
-      - targets: ["localhost:9092"]
+      - targets: ["localhost:9101"]
 
   - job_name: "kafka"
     static_configs:
